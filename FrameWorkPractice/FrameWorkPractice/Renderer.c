@@ -1,7 +1,7 @@
 #include "Renderer.h"
 #include <Windows.h>
 
-// s_ : static 변수
+// s_ : static 변수 // 정적 데이터로 할당되는 변수라는 의미 // 교수님 개인의 컨벤션
 HANDLE s_screens[2];			// 더블 버퍼링용 두 메모리	// typedef void* HANDLE : pointer to void(anything)을 HANDLE로 재정의
 int s_backBufferIndex;
 
