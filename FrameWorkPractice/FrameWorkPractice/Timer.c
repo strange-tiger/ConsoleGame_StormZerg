@@ -18,6 +18,8 @@ void Timer_Update(void)				// 델타 타임을 구하여 컴퓨터에 따른 처리속도의 차이를
 	// float으로 캐스팅하여 밀리초 단위까지 델타 타임을 구한다.
 	// CLOCKS_PER_SEC : clock함수로 구하는 시간의 흐름을 초 단위로 바꾸기 위해 나누어 줘야하는 상수.
 
+	// 델타 타임(deltaTime) : 프레임 간의 시간. 이전 프레임으로부터 현재 프레임을 시작할 때까지 걸린 시간
+
 	s_deltaTime = deltaTime;		// s_deltaTime을 갱신
 	s_prevTick = currentTick;		// s_prevTick을 갱신
 }
