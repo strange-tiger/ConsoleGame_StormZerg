@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{c2eabbc9-b184-4e0e-8961-004e9d36318d}</ProjectGuid>
-    <RootNamespace>ConsoleGame</RootNamespace>
+    <ProjectGuid>{903774fd-0be8-42aa-8657-4e8cdb7c41fa}</ProjectGuid>
+    <RootNamespace>FrameWorkPractice</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -78,11 +78,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -141,17 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Framework\App.c" />
-    <ClCompile Include="Framework\Renderer.c" />
+    <ClCompile Include="App.c" />
     <ClCompile Include="Main.c" />
+    <ClCompile Include="Renderer.c" />
     <ClCompile Include="Timer.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Common.h" />
-    <ClInclude Include="Framework\App.h" />
-    <ClInclude Include="Framework\Renderer.h" />
+    <ClInclude Include="App.h" />
+    <ClInclude Include="Renderer.h" />
     <ClInclude Include="Timer.h" />
-    <ClInclude Include="Type.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
