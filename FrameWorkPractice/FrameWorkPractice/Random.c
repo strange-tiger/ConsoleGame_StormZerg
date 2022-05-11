@@ -26,36 +26,12 @@ int32 Random_GetNumberFromRange(int32 minInclusive, int32 maxExclusive)
 	return randomNumberFromRange;
 }
 
-//int32 Random_GetNumberFromRange(int32 minInclusive, int32 maxExclusive)
-//{
-//	
-//
-//	
-//
-//	
-//	
-//	
-//	
-//	
-//	
-//
-//	
-//}
 
 float Random_GetFNumberFromRange(float minInclusive, float maxExclusive)
 {
 	float randomFNumberFromRange = 0.0f;
 
-	randomFNumberFromRange = RANDOM_NUMBER_RANGE_SIZE * (float)rand() / RAND_MAX  + minInclusive;
+	randomFNumberFromRange = (maxExclusive - minInclusive) * rand() / RAND_MAX  + minInclusive;
 	
 	return randomFNumberFromRange;
 }
-
-//float Random_GetFNumberFromRange(float minInclusive, float maxExclusive)
-//{
-//	
-//
-//	
-//
-//	
-//}
