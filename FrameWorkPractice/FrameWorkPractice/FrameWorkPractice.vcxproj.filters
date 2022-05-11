@@ -27,6 +27,12 @@
     <ClCompile Include="Timer.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Input.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h">
@@ -36,6 +42,15 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Timer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Type.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

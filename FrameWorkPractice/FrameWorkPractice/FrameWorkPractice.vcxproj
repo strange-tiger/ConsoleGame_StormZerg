@@ -140,14 +140,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="App.c" />
+    <ClCompile Include="Input.c" />
     <ClCompile Include="Main.c" />
+    <ClCompile Include="Random.c" />
     <ClCompile Include="Renderer.c" />
     <ClCompile Include="Timer.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="Random.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Timer.h" />
+    <ClInclude Include="Type.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
