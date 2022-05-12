@@ -7,6 +7,7 @@
 #include "Input.h"
 #include "Random.h"
 #include <assert.h>
+#include "Text.h"
 
 bool App_Init(void)							// 초기화
 {
@@ -23,8 +24,17 @@ void processInput(void)						// 입력 처리
 }
 
 char str[2][128];
+Text text[128];
 void update(void)							// 게임 업데이트 : 갱신
 {
+	TextCopyWithWhite(text, L"우리반의 존잘은 성권문이다.");
+
+	//TextCopy(text, L"우리반의 존잘은 안재현이다.");
+	//for (int32 i = 9; text[i].Char.UnicodeChar != L'\0'; i++)
+	//{
+	//	text[i].Attributes = BACK_COLOR_RED | TEXT_COLOR_WHITE | TEXT_COLOR_STRONG;
+	//}
+
 	int32 minVal = -45;
 	int32 maxVal = 32;
 	int32 randInt = Random_GetNumberFromRange(minVal, maxVal);
@@ -41,7 +51,7 @@ void update(void)							// 게임 업데이트 : 갱신
 
 	//sprintf_s(str, sizeof(str), "현재 입력 없음");
 	//Sleep(100);
-
+	/*
 	if (Input_GetKey(VK_UP))
 	{
 		sprintf_s(str, sizeof(str), "위쪽 화살표 눌림");
@@ -56,12 +66,13 @@ void update(void)							// 게임 업데이트 : 갱신
 	{
 		sprintf_s(str, sizeof(str), "왼쪽, 오른쪽 화살표 동시 눌림");
 	}
+	*/
 }
 
 void render(void)							// 게임 출력
 {
-	Renderer_DrawText(str[0], strlen(str[0]));
-	Renderer_DrawText(str[1], strlen(str[1]));
+	Renderer_DrawText(text, TextLen(text), 10 , 10);
+	// Renderer_DrawText(str[1], strlen(str[1]));
 	
 	// Renderer_DrawText("로아망겜", sizeof("로아망겜"));
 

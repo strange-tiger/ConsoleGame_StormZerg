@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{903774fd-0be8-42aa-8657-4e8cdb7c41fa}</ProjectGuid>
-    <RootNamespace>FrameWorkPractice</RootNamespace>
+    <ProjectGuid>{3e763781-e116-46d9-89c6-86c313b458e1}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,23 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="App.c" />
-    <ClCompile Include="Input.c" />
-    <ClCompile Include="Main.c" />
-    <ClCompile Include="Random.c" />
-    <ClCompile Include="Renderer.c" />
-    <ClCompile Include="Text.c" />
-    <ClCompile Include="Timer.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="App.h" />
-    <ClInclude Include="Common.h" />
-    <ClInclude Include="Input.h" />
-    <ClInclude Include="Random.h" />
-    <ClInclude Include="Renderer.h" />
-    <ClInclude Include="Text.h" />
-    <ClInclude Include="Timer.h" />
-    <ClInclude Include="Type.h" />
+    <ClCompile Include="main.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
