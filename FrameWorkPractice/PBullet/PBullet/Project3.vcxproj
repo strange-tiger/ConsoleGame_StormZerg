@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{903774fd-0be8-42aa-8657-4e8cdb7c41fa}</ProjectGuid>
-    <RootNamespace>FrameWorkPractice</RootNamespace>
+    <ProjectGuid>{9ab3d48a-0eb4-475c-8123-d6340cd380d4}</ProjectGuid>
+    <RootNamespace>Project3</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>PBullet</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -72,19 +73,15 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -143,25 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Framework\App.c" />
-    <ClCompile Include="Framework\Input.c" />
-    <ClCompile Include="Framework\Random.c" />
-    <ClCompile Include="Framework\Renderer.c" />
-    <ClCompile Include="Framework\Text.c" />
-    <ClCompile Include="Framework\Timer.c" />
-    <ClCompile Include="Game\Scene.c" />
     <ClCompile Include="Main.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Common.h" />
-    <ClInclude Include="Framework\App.h" />
-    <ClInclude Include="Framework\Input.h" />
-    <ClInclude Include="Framework\Random.h" />
-    <ClInclude Include="Framework\Renderer.h" />
-    <ClInclude Include="Framework\Text.h" />
-    <ClInclude Include="Framework\Timer.h" />
-    <ClInclude Include="Game\Scene.h" />
-    <ClInclude Include="Type.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

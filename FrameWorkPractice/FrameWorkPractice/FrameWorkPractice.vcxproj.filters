@@ -13,54 +13,60 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{6751802e-9326-42df-8345-74004ba6179c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{dab392eb-b05b-4ea6-ae05-d5d4b30d4bc6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.c">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Framework\App.c">
+      <Filter>Framework</Filter>
     </ClCompile>
-    <ClCompile Include="App.c">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Framework\Input.c">
+      <Filter>Framework</Filter>
     </ClCompile>
-    <ClCompile Include="Renderer.c">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Framework\Random.c">
+      <Filter>Framework</Filter>
     </ClCompile>
-    <ClCompile Include="Timer.c">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Framework\Renderer.c">
+      <Filter>Framework</Filter>
     </ClCompile>
-    <ClCompile Include="Input.c">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Framework\Text.c">
+      <Filter>Framework</Filter>
     </ClCompile>
-    <ClCompile Include="Random.c">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Framework\Timer.c">
+      <Filter>Framework</Filter>
     </ClCompile>
-    <ClCompile Include="Text.c">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Game\Scene.c">
+      <Filter>Game</Filter>
     </ClCompile>
+    <ClCompile Include="Main.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="App.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Framework\App.h">
+      <Filter>Framework</Filter>
     </ClInclude>
-    <ClInclude Include="Renderer.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Framework\Input.h">
+      <Filter>Framework</Filter>
     </ClInclude>
-    <ClInclude Include="Timer.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Framework\Random.h">
+      <Filter>Framework</Filter>
     </ClInclude>
-    <ClInclude Include="Input.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Framework\Renderer.h">
+      <Filter>Framework</Filter>
     </ClInclude>
-    <ClInclude Include="Type.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Framework\Text.h">
+      <Filter>Framework</Filter>
     </ClInclude>
-    <ClInclude Include="Random.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Framework\Timer.h">
+      <Filter>Framework</Filter>
     </ClInclude>
-    <ClInclude Include="Text.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Game\Scene.h">
+      <Filter>Game</Filter>
     </ClInclude>
-    <ClInclude Include="Common.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
+    <ClInclude Include="Type.h" />
+    <ClInclude Include="Common.h" />
   </ItemGroup>
 </Project>
