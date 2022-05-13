@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include <time.h>
 
+#define GetKey(vkey) 0x8000 & GetAsyncKeyState(vkey)
 #define SPACE_MOVING 1
 #define BOUNDARY_X 32
 #define BOUNDARY_Y 16
@@ -31,24 +32,24 @@ int main(void)
 	{
 		// 입력 // 처리
 		// 화살표 키가 눌리면 SPACE_MOVING만큼 이동하도록
-		if (0x8000 & GetAsyncKeyState(VK_LEFT) && playerPos.X > 0)
+		if (GetKey(VK_LEFT) && playerPos.X > 0)
 		{
 			playerPos.X -= SPACE_MOVING;
 		}
-		if (0x8000 & GetAsyncKeyState(VK_RIGHT) && playerPos.X < BOUNDARY_X)
+		if (GetKey(VK_RIGHT) && playerPos.X < BOUNDARY_X)
 		{
 			playerPos.X += SPACE_MOVING;
 		}
-		if (0x8000 & GetAsyncKeyState(VK_UP) && playerPos.Y > 0)
+		if (GetKey(VK_UP) && playerPos.Y > 0)
 		{
 			playerPos.Y -= SPACE_MOVING;
 		}
-		if (0x8000 & GetAsyncKeyState(VK_DOWN) && playerPos.Y < BOUNDARY_Y)
+		if (GetKey(VK_DOWN) && playerPos.Y < BOUNDARY_Y)
 		{
 			playerPos.Y += SPACE_MOVING;
 		}
 
-		if (0x8000 & GetAsyncKeyState(VK_SPACE))
+		if (GetKey(VK_SPACE))
 		{
 			bullet.pos.X = playerPos.X + 1;
 			bullet.pos.Y = playerPos.Y;
@@ -84,7 +85,7 @@ int main(void)
 			system("cls");
 		}
 
-		Sleep(10);
+		Sleep(20);
 	}
 	return 0;
 }
